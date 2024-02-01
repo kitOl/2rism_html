@@ -1,0 +1,23 @@
+.button {
+  background-color: #7b61ff;
+  border-radius: 12px;
+  color: #fff;
+
+  transition: background-color 0.2s ease-in;
+}
+
+.button:hover {
+  background-color: #6b61ff;
+}
+
+.button--huge {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+
+  padding: 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

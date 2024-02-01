@@ -1,5 +1,6 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import "./button.css";
 
 body {
   font-family: "Poppins", sans-serif;
@@ -121,4 +122,18 @@ body {
   width: 48px;
   height: 48px;
   border-radius: 50%;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 62px;
 }
