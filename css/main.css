@@ -1,0 +1,124 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.none {
+  display: none !important;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 32px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  height: 800px;
+  padding: 31px 0 100px;
+
+  color: #fff;
+  background-color: #000;
+
+  background-image: url("./../img/header/2rism-bg.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 54px 54px;
+}
+
+.header a {
+  color: #fff;
+}
+
+.container--header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 48px;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 54px;
+
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.nav-list__item {
+}
+
+.nav-list__link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-list__link--active {
+  font-weight: 400;
+  color: #fff;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.user__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  font-size: 14px;
+}
+
+.user__greeting {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.user__name {
+  font-weight: 600;
+  color: #fff;
+}
+
+.user__avatar {
+  position: relative;
+}
+
+.user__avatar::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #ff0000;
+  border-radius: 50%;
+}
+
+.user__img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
