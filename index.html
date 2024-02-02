@@ -59,7 +59,51 @@
           </button>
         </div>
 
-        <div class="header__search">SEARCH</div>
+        <form class="form" action="">
+          <div class="form__input-wrapper form__input--location">
+            <label for="location" class="form__label">Location</label>
+            <input
+              id="location"
+              type="text"
+              class="form__input"
+              placeholder="Explore nearby destinations"
+            />
+          </div>
+
+          <div class="form__input-wrapper form__input--activity">
+            <label for="activity" class="form__label">Activity</label>
+            <select id="activity" name="activity" class="form__select">
+              <option value="All">All Activities</option>
+              <option value="Culture">Culture</option>
+              <option value="Sport">Sport</option>
+              <option value="Extreme">Extreme</option>
+            </select>
+          </div>
+
+          <div class="form__input-wrapper form__input--date">
+            <label for="date" class="form__label">When</label>
+            <input
+              id="date"
+              type="date"
+              class="form__input"
+              placeholder="Choose a Date"
+            />
+          </div>
+
+          <div class="form__input-wrapper form__input--guests">
+            <label for="guests" class="form__label">Location</label>
+            <select id="guests" name="guests" class="form__select">
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="">3 guests</option>
+              <option value="">4 guests and more</option>
+            </select>
+          </div>
+
+          <button class="button button--search">
+            <img src="./img/icons/search.svg" alt="Search" />
+          </button>
+        </form>
       </div>
     </header>
 
