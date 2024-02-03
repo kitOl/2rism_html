@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>2rism project</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./libs/autoComplete/css/autoComplete.01.css" />
+    <link rel="stylesheet" href="./libs/custom-select/custom-select.css" />
   </head>
   <body>
     <header class="header">
@@ -63,6 +65,7 @@
           <div class="form__input-wrapper form__input--location">
             <label for="location" class="form__label">Location</label>
             <input
+              autocomplete="off"
               id="location"
               type="text"
               class="form__input"
@@ -84,7 +87,7 @@
             <label for="date" class="form__label">When</label>
             <input
               id="date"
-              type="date"
+              type="text"
               class="form__input"
               placeholder="Choose a Date"
             />
@@ -107,6 +110,11 @@
       </div>
     </header>
 
+    <script src="./libs/autoComplete/autoComplete.min.js"></script>
+    <script src="./libs/custom-select/custom-select.min.js"></script>
+    <script src="./libs/easepick/easepick.min.js"></script>
+
+    <script src="./js/input-dest.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
