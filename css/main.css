@@ -68,9 +68,6 @@ body {
   text-transform: capitalize;
 }
 
-.nav-list__item {
-}
-
 .nav-list__link {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -238,10 +235,6 @@ body {
   grid-template-columns: repeat(6, 1fr);
 }
 
-.section__card--hotels {
-  grid-template-columns: repeat(4, 1fr);
-}
-
 .card {
   position: relative;
   /* height: 233px; */
@@ -258,7 +251,7 @@ body {
   height: 100%;
 }
 
-.cart__title {
+.card__title {
   font-size: 16px;
   font-weight: 500;
   color: #161414;
@@ -292,6 +285,10 @@ body {
   align-items: center;
 }
 
+.section__card--hotels {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .card__img--hotel {
   margin-bottom: 10px;
 }
@@ -304,4 +301,12 @@ body {
   display: flex;
   gap: 2.39px;
   align-items: center;
+}
+
+.section__card--activities {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card__img--activity {
+  margin-bottom: 16px;
 }
