@@ -21,3 +21,22 @@
   align-items: center;
   gap: 8px;
 }
+
+.button-more {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  font-size: 16px;
+  color: #5243c2;
+
+  padding: 10px;
+  background-color: #f6f4ff;
+  border-radius: 12px;
+
+  transition: background-color 0.2s ease-in;
+}
+
+.button-more:hover {
+  background-color: rgba(82, 67, 194, 0.2);
+}
