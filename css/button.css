@@ -24,7 +24,9 @@
 
 .button-more {
   display: flex;
+  /* align-content: flex-start; */
   align-items: center;
+
   gap: 4px;
 
   font-size: 16px;
