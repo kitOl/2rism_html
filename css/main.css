@@ -226,21 +226,33 @@ body {
   text-align: left;
 }
 
-.section__card {
+.section__cards {
   display: grid;
   gap: 32px;
 }
 
-.section__card--dest {
+.section__cards--dest {
   grid-template-columns: repeat(6, 1fr);
+}
+
+.section__cards--4-in-row {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.section__cards--2-in-row {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .card {
   position: relative;
-  /* height: 233px; */
-  background-color: rgba(255, 255, 255, 0.5);
 
   text-align: left;
+}
+
+.card--wide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
 }
 
 .card__link {
@@ -279,18 +291,27 @@ body {
   margin-bottom: 8px;
 }
 
+.card__img--hotel {
+  margin-bottom: 10px;
+}
+
+.card__img--no-margin {
+  margin: 0;
+  border-radius: 24px;
+}
+
+.card__img--activity {
+  margin-bottom: 16px;
+}
+
 .card__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.section__card--hotels {
+.section__cards--hotels {
   grid-template-columns: repeat(4, 1fr);
-}
-
-.card__img--hotel {
-  margin-bottom: 10px;
 }
 
 .card__title--hotel {
@@ -303,10 +324,57 @@ body {
   align-items: center;
 }
 
-.section__card--activities {
+.section__cards--activities {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.card__img--activity {
-  margin-bottom: 16px;
+.card__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card__title--big {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card__text {
+  color: #5b5b5b;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.card__footer-wide {
+  margin-top: auto;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.card__footer-link {
+  position: relative;
+  z-index: 1;
+
+  padding-left: 20px;
+  background-repeat: no-repeat;
+  background-position: 0 1px;
+
+  font-size: 12px;
+  color: #878787;
+}
+
+.card__footer-link:hover {
+  color: #7861ff;
+}
+
+.card__footer--day {
+  background-image: url("./../img/icons/calendar-gray.svg");
+}
+
+.card__footer--author {
+  background-image: url("./../img/icons/user-gray.svg");
+}
+
+.card__footer--comments {
+  background-image: url("./../img/icons/chat-gray.svg");
 }
