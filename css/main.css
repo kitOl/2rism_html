@@ -1,6 +1,8 @@
 @import "./reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 @import "./button.css";
+@import "./nav-icon.css";
+@import "./mobile-nav.css";
 
 body {
   font-family: "Poppins", sans-serif;
@@ -15,7 +17,7 @@ body {
   max-width: 1440px;
   padding: 0 32px;
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .header {
@@ -42,7 +44,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .nav {
@@ -143,6 +145,7 @@ body {
 .form {
   display: flex;
   align-items: center;
+  align-self: center;
 
   width: 1140px;
   height: 88px;
@@ -199,12 +202,6 @@ body {
 
 .form__input::placeholder {
   color: #000;
-}
-
-.button--search {
-  width: 60px;
-  height: 60px;
-  padding: 20px;
 }
 
 .main {
