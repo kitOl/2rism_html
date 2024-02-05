@@ -42,3 +42,9 @@
 .button-more:hover {
   background-color: rgba(82, 67, 194, 0.2);
 }
+
+.button--subscribe {
+  width: 72px;
+  height: 72px;
+  padding: 24px;
+}
