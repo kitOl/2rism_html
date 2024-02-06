@@ -106,6 +106,10 @@
 }
 
 @media (max-width: 640px) {
+  .main {
+    gap: 60px;
+  }
+
   .title-1 {
     font-size: 22px;
   }
@@ -117,11 +121,16 @@
   .section__cards--hotels,
   .section__cards--activities {
     grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
   }
 
   .card--wide {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .about-us {
+    grid-template-columns: 1fr;
   }
 }
 
