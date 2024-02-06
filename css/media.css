@@ -72,7 +72,8 @@
     row-gap: 50px;
   }
 
-  .section__cards--hotels {
+  .section__cards--hotels,
+  .section__cards--activities {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 50px;
   }
@@ -113,7 +114,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .section__cards--hotels {
+  .section__cards--hotels,
+  .section__cards--activities {
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -130,6 +132,6 @@
   }
 
   .section__cards--dest {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
   }
 }

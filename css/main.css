@@ -245,6 +245,10 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.section__cards--activities {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .card {
   position: relative;
 
@@ -325,10 +329,6 @@ body {
   display: flex;
   gap: 2.39px;
   align-items: center;
-}
-
-.section__cards--activities {
-  grid-template-columns: repeat(4, 1fr);
 }
 
 .card__desc {
