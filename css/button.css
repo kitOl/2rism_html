@@ -37,8 +37,14 @@
 }
 
 .button-more {
+  width: 105px;
+  padding: 10px 34px 10px 10px;
+  background-image: url("./../img/icons/next-blue.svg");
+  background-repeat: no-repeat;
+  background-position: 75px 12px;
+
   display: flex;
-  /* align-content: flex-start; */
+  /* align-content: sflex-start; */
   align-items: center;
 
   gap: 4px;
@@ -46,7 +52,6 @@
   font-size: 16px;
   color: #5243c2;
 
-  padding: 10px;
   background-color: #f6f4ff;
   border-radius: 12px;
 

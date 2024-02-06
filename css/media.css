@@ -55,7 +55,7 @@
   }
 
   .main {
-    row-gap: 60px;
+    row-gap: 100px;
     padding: 40px 0;
   }
 
@@ -67,8 +67,23 @@
     font-size: 26px;
   }
 
-  .section__cards--6-in-row {
-    grid-template-columns: repeat(3, 2fr);
+  .section__cards--dest {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 50px;
+  }
+
+  .section__cards--hotels {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+  }
+
+  .section__cards--tips {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  .card__text {
+    font-size: 14px;
   }
 }
 
@@ -90,13 +105,31 @@
 }
 
 @media (max-width: 640px) {
-  .section__cards--6-in-row {
+  .title-1 {
+    font-size: 22px;
+  }
+
+  .section__cards--dest {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section__cards--hotels {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card--wide {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
 
 @media (max-width: 440px) {
-  .section__cards--6-in-row {
+  .title-1 {
+    font-size: 20px;
+    /* font-weight: 500; */
+  }
+
+  .section__cards--dest {
     grid-template-columns: repeat(1, 1fr);
   }
 }
