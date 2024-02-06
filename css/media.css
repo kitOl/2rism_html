@@ -27,6 +27,15 @@
   .autoComplete_wrapper > input {
     width: auto !important;
   }
+
+  .footer {
+    padding: 80px 0;
+  }
+
+  .footer__row {
+    grid-template-columns: 1fr 2fr;
+    column-gap: 30px;
+  }
 }
 
 @media (max-width: 1139px) {
@@ -86,6 +95,13 @@
   .card__text {
     font-size: 14px;
   }
+
+  .footer__subscribe {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    width: unset;
+    max-width: none;
+  }
 }
 
 @media (max-width: 1040px) {
@@ -132,6 +148,16 @@
   .about-us {
     grid-template-columns: 1fr;
   }
+
+  .footer__row {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer__nav-wrapper {
+    justify-content: space-between;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 440px) {
@@ -142,5 +168,15 @@
 
   .section__cards--dest {
     grid-template-columns: 1fr;
+  }
+
+  .subscribe {
+    flex-direction: column;
+  }
+
+  .subscribe__btn-wrapper,
+  .button--subscribe,
+  .subscribe__input-wrapper {
+    width: 100%;
   }
 }
