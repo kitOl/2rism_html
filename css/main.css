@@ -455,7 +455,8 @@ body {
 .footer__nav-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 64px;
+  justify-content: space-between;
+  gap: 32px;
 }
 
 .footer__nav {
